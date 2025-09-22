@@ -28,13 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // txtusername
+            // 
+            this.txtusername.Location = new System.Drawing.Point(455, 95);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(100, 22);
+            this.txtusername.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(366, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "username";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtusername);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.Label label1;
     }
 }
 
