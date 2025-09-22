@@ -21,5 +21,15 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if(txtusername.Text == "admin" && txtpassword.Text == "password")
+            {
+                Form2 form2 = new Form2();
+                form2.Show();
+            }
+            
+        }
     }
 }
